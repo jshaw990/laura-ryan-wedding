@@ -1,6 +1,6 @@
 <template>
   <v-img
-    :src="require('@/static/bg-invite.webp')"
+    src="/bg-invite.webp"
     contain
     max-width="775"
     class="mx-auto bg-white my-md-12"

@@ -28,7 +28,7 @@
             their tradition to go every year on the day they first met! 12.06.18
           </p>
           <v-img
-            src="https://i.imgur.com/SHoB7Ms.jpg"
+            src="/our-story-000.webp"
             contain
             max-width="215"
             class="mx-md-3 bg-white"
@@ -38,7 +38,7 @@
           class="my-6 d-flex flex-column-reverse flex-md-row justify-space-between align-center"
         >
           <v-img
-            src="https://i.imgur.com/0u40mp3.jpg"
+            src="/our-story-002.webp"
             contain
             max-width="215"
             class="mx-md-3 bg-white"
@@ -73,7 +73,7 @@
             the day Ryan knew he fell in love! 05.20.19
           </p>
           <v-img
-            src="https://i.imgur.com/EhPJjms.jpg"
+            src="/our-story-002.webp"
             contain
             max-width="215"
             class="mx-md-3 bg-white"
@@ -103,7 +103,7 @@
             overlooking the water and the lighthouse!
           </p>
           <v-img
-            src="https://i.imgur.com/AOBam8K.jpg"
+            src="/our-story-004.webp"
             contain
             max-width="215"
             class="mx-md-3 bg-white"
@@ -118,13 +118,13 @@
             so far and I will forever be happy I asked Laura to be my wife.”
           </p>
           <v-img
-            src="https://i.imgur.com/X1TjWqA.jpg"
+            src="/our-story-000.webp"
             contain
             max-width="215"
             class="d-block d-md-none mx-md-3 bg-white"
           />
           <v-img
-            src="https://i.imgur.com/X1TjWqA.jpg"
+            src="/our-story-000.webp"
             contain
             max-width="450"
             class="d-none d-md-block mx-md-3 bg-white"
