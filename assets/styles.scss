@@ -1,0 +1,53 @@
+html {
+    background-color: rgba(92, 20, 39, 1);
+}
+
+.page {
+    margin: 70px auto;
+    padding: 35px 5px;
+}
+
+.background-hue {
+    background-color: rgba(92, 20, 39, .75);
+    padding: 10px;
+    width: fit-content;
+}
+
+.v-list {
+    background-color: rgba(92, 20, 39, 1) !important;
+}
+
+.red-background-solid {
+    background-color: rgba(92, 20, 39, 1);
+}
+
+.red-background-trans {
+    background-color: rgba(92, 20, 39, .75);
+}
+
+.red-text-color {
+    color: rgba(92, 20, 39, 1);
+}
+
+.large-title {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 32px;
+}
+
+.small-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 32px;
+}
+
+.transparent-background {
+    background-color: transparent !important;
+}
+
+a {
+    color: inherit !important;
+    &:hover {
+        color: red;
+    }
+}

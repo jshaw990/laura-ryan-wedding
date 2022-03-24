@@ -1,12 +1,16 @@
 <template>
   <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
+    <div class="bg-image">
+      <h1
+        v-if="error.statusCode === 404"
+        class="small-title red-background-trans"
+      >
+        {{ pageNotFound }}
+      </h1>
+      <h1 v-else class="small-title red-background-trans">
+        {{ otherError }}
+      </h1>
+    </div>
   </v-app>
 </template>
 
@@ -36,8 +40,19 @@ export default {
 }
 </script>
 
-<style scoped>
-h1 {
-  font-size: 20px;
+<style lang="scss" scoped>
+.bg-image {
+  background-image: url('../static/background-other.jpg');
+  background-position: top-center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  h1 {
+    width: fit-content;
+    margin: 50px auto;
+    padding: 3rem;
+  }
 }
 </style>
