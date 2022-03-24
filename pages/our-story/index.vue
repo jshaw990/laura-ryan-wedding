@@ -27,22 +27,26 @@
             at Zoo Lights at the Calgary Zoo, they had a blast and have made it
             their tradition to go every year on the day they first met! 12.06.18
           </p>
-          <v-img
-            src="/our-story-000.webp"
-            contain
-            max-width="215"
-            class="mx-md-3 bg-white"
-          />
+          <a href="/our-story-003.webp" target="_blank">
+            <v-img
+              src="/our-story-003.webp"
+              contain
+              max-width="215"
+              class="mx-md-3 bg-white"
+            />
+          </a>
         </div>
         <div
           class="my-6 d-flex flex-column-reverse flex-md-row justify-space-between align-center"
         >
-          <v-img
-            src="/our-story-002.webp"
-            contain
-            max-width="215"
-            class="mx-md-3 bg-white"
-          />
+          <a href="/our-story-002.webp" target="_blank">
+            <v-img
+              src="/our-story-002.webp"
+              contain
+              max-width="215"
+              class="mx-md-3 bg-white"
+            />
+          </a>
           <p>
             Laura ended up meeting Ryan’s family pretty fast in an accidental
             kind of way. His family goes to Heritage Park’s Once Upon A
@@ -72,12 +76,14 @@
             for a walk around the lake. Little did she know then, but that was
             the day Ryan knew he fell in love! 05.20.19
           </p>
-          <v-img
-            src="/our-story-002.webp"
-            contain
-            max-width="215"
-            class="mx-md-3 bg-white"
-          />
+          <a href="/our-story-001.webp" target="_blank">
+            <v-img
+              src="/our-story-001.webp"
+              contain
+              max-width="215"
+              class="mx-md-3 bg-white"
+            />
+          </a>
         </div>
       </v-card>
     </v-col>
@@ -102,12 +108,14 @@
             said YES!!! It was such a wonderful and perfect moment at sunset,
             overlooking the water and the lighthouse!
           </p>
-          <v-img
-            src="/our-story-004.webp"
-            contain
-            max-width="215"
-            class="mx-md-3 bg-white"
-          />
+          <a href="/our-story-004.webp" target="_blank">
+            <v-img
+              src="/our-story-004.webp"
+              contain
+              max-width="215"
+              class="mx-md-3 bg-white"
+            />
+          </a>
         </div>
         <div class="my-6 d-flex flex-column justify-space-between align-center">
           <p>
@@ -117,18 +125,20 @@
             “It was one of the most nerve-racking but happiest days of my life
             so far and I will forever be happy I asked Laura to be my wife.”
           </p>
-          <v-img
-            src="/our-story-000.webp"
-            contain
-            max-width="215"
-            class="d-block d-md-none mx-md-3 bg-white"
-          />
-          <v-img
-            src="/our-story-000.webp"
-            contain
-            max-width="450"
-            class="d-none d-md-block mx-md-3 bg-white"
-          />
+          <a href="https://i.imgur.com/bZZG89Q.jpg" target="_blank">
+            <v-img
+              src="https://i.imgur.com/bZZG89Q.jpg"
+              contain
+              max-width="215"
+              class="d-block d-md-none mx-md-3 bg-white"
+            />
+            <v-img
+              src="https://i.imgur.com/bZZG89Q.jpg"
+              contain
+              max-width="450"
+              class="d-none d-md-block mx-md-3 bg-white"
+            />
+          </a>
         </div>
       </v-card>
     </v-col>

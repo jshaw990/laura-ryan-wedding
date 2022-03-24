@@ -14,6 +14,12 @@
         <span class="nav-item">
           <NuxtLink to="/rsvp" class="link"> RSVP </NuxtLink>
         </span>
+        <span class="nav-item">
+          <NuxtLink to="/gallery" class="link"> Gallery </NuxtLink>
+        </span>
+        <span class="nav-item">
+          <NuxtLink to="/wedding-party" class="link"> Wedding Party </NuxtLink>
+        </span>
       </v-row>
     </v-footer>
     <v-col
@@ -27,6 +33,12 @@
       </div>
       <div class="mb-3">
         <NuxtLink to="our-story" class="link"> Our Story </NuxtLink>
+      </div>
+      <div class="mb-3">
+        <NuxtLink to="gallery" class="link"> Gallery </NuxtLink>
+      </div>
+      <div class="mb-3">
+        <NuxtLink to="wedding-party" class="link"> Wedding Party </NuxtLink>
       </div>
       <div class="mb-3">
         <NuxtLink to="itinerary" class="link">Day-of Itinerary</NuxtLink>
