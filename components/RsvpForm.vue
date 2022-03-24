@@ -316,20 +316,20 @@ export default {
         const now = Date.now()
         const time = new Date(now).toLocaleString()
 
-        const htmlMessage = `<div>
-        <h1>Wedding RSVP from ${state.form.attendee[0].name}</h1>
-        </div><div>Received at: ${time}</div>
-        <div>Number of people attending: ${state.peopleAttending}</div>
-        <div>Willing to be contacted: ${state.form.canContact}</div>
-        <div>Phone number: <a href='tel:${state.form.phone}'>${state.form.phone}</a></div>
-        <div>Email: <a href='mailto:${state.form.email}'>${state.form.email}</a></div>
-        <div>Attendee Name: ${state.form.attendee[0].name} Dietary restriction: ${state.form.attendee[0].dietary}</div>
-        <div>Attendee Name: ${state.form.attendee[1].name} Dietary restriction: ${state.form.attendee[1].dietary}</div>
-        <div>Attendee Name: ${state.form.attendee[2].name} Dietary restriction: ${state.form.attendee[2].dietary}</div>
-        <div>Attendee Name: ${state.form.attendee[3].name} Dietary restriction: ${state.form.attendee[3].dietary}</div>
-        <div>Attendee Name: ${state.form.attendee[4].name} Dietary restriction: ${state.form.attendee[4].dietary}</div>
-        <div>Attendee Name: ${state.form.attendee[5].name} Dietary restriction: ${state.form.attendee[5].dietary}</div>
-        </div>`
+        const htmlMessage = `
+        Wedding RSVP from ${state.form.attendee[0].name}
+        Received at: ${time}
+        Number of people attending: ${state.peopleAttending}
+        Willing to be contacted: ${state.form.canContact}
+        Phone number: ${state.form.phone}
+        Email: ${state.form.email}
+        Attendee Name: ${state.form.attendee[0].name} Dietary restriction: ${state.form.attendee[0].dietary}
+        Attendee Name: ${state.form.attendee[1].name} Dietary restriction: ${state.form.attendee[1].dietary}
+        Attendee Name: ${state.form.attendee[2].name} Dietary restriction: ${state.form.attendee[2].dietary}
+        Attendee Name: ${state.form.attendee[3].name} Dietary restriction: ${state.form.attendee[3].dietary}
+        Attendee Name: ${state.form.attendee[4].name} Dietary restriction: ${state.form.attendee[4].dietary}
+        Attendee Name: ${state.form.attendee[5].name} Dietary restriction: ${state.form.attendee[5].dietary}
+        `
 
         const sendEmail = async () => {
           await fetch(FORMSPARK_URL, {
