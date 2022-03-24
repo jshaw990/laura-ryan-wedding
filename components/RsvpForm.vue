@@ -339,7 +339,48 @@ export default {
               Accept: 'application/json',
             },
             body: JSON.stringify({
-              message: htmlMessage,
+              'Wedding RSVP from': state.form.attendee[0].name,
+              'Received at': time,
+              'Number of people attending': state.peopleAttending,
+              'Willing to be contacted': state.form.canContact,
+              'Phone number': state.form.phone,
+              Email: state.form.email,
+              'Attendee 1': [
+                {
+                  Name: state.form.attendee[0].name,
+                  'Dietary restriction': state.form.attendee[0].dietary,
+                },
+              ],
+              'Attendee 2': [
+                {
+                  Name: state.form.attendee[1].name,
+                  'Dietary restriction': state.form.attendee[1].dietary,
+                },
+              ],
+              'Attendee 3': [
+                {
+                  Name: state.form.attendee[2].name,
+                  'Dietary restriction': state.form.attendee[2].dietary,
+                },
+              ],
+              'Attendee 4': [
+                {
+                  Name: state.form.attendee[3].name,
+                  'Dietary restriction': state.form.attendee[3].dietary,
+                },
+              ],
+              'Attendee 5': [
+                {
+                  Name: state.form.attendee[4].name,
+                  'Dietary restriction': state.form.attendee[4].dietary,
+                },
+              ],
+              'Attendee 6': [
+                {
+                  Name: state.form.attendee[5].name,
+                  'Dietary restriction': state.form.attendee[5].dietary,
+                },
+              ],
             }),
           })
             .then(() => {
