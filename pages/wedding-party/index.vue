@@ -25,7 +25,7 @@
           />
           <div class="text-center py-6">Beth - Bridesmaid</div>
           <v-img
-            src="https://i.imgur.com/dnQC0Lk.jpg"
+            src="https://i.imgur.com/AKvYrv3.png"
             contain
             class="mx-md-3 bg-white"
           />
