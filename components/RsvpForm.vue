@@ -47,7 +47,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[0].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
@@ -76,7 +76,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[1].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
@@ -105,7 +105,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[2].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
@@ -134,7 +134,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[3].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
@@ -163,7 +163,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[4].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
@@ -192,7 +192,7 @@
             :items="attendingOptions"
             label="Does this guest accept this invitation?"
             v-model="form.attendee[5].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            class="mx-md-8 mx-2 sm-mx-0 text-center"
             color="white"
           />
         </v-row>
