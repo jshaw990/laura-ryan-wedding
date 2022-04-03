@@ -7,12 +7,7 @@
         autocomplete="off"
         v-model="isValid"
       >
-        <v-row
-          v-if="peopleAttending === 0"
-          justify="space-between"
-          cols="12"
-          md="8"
-        >
+        <v-row v-if="peopleAttending === 0" justify="space-between">
           <v-select
             :items="range"
             label="Number of Guests Invited"
@@ -24,177 +19,206 @@
         <v-row
           v-if="peopleAttending !== 0"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[0].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-            required
-          />
-          <v-text-field
-            v-model="form.attendee[0].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[0].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[0].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[0].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[0].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <v-row
           v-if="peopleAttending > 1"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[1].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-text-field
-            v-model="form.attendee[1].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[1].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[1].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[1].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[1].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <v-row
           v-if="peopleAttending > 2"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[2].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-text-field
-            v-model="form.attendee[2].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[2].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[2].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[2].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[2].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <v-row
           v-if="peopleAttending > 3"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[3].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-text-field
-            v-model="form.attendee[3].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[3].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[3].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[3].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[3].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <v-row
           v-if="peopleAttending > 4"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[4].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-text-field
-            v-model="form.attendee[4].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[4].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[4].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[4].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[4].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <v-row
           v-if="peopleAttending > 5"
           justify="space-between"
-          cols="12"
-          md="8"
           class="my-md-4 my-2"
         >
-          <v-text-field
-            v-model="form.attendee[5].name"
-            label="Guest Name"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-text-field
-            v-model="form.attendee[5].dietary"
-            label="Dietary Restriction"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            autocomplete="new-password"
-            color="white"
-          />
-          <v-select
-            :items="attendingOptions"
-            label="Does this guest accept this invitation?"
-            v-model="form.attendee[5].attending"
-            class="mx-md-8 mx-2 sm-mx-0 text-center"
-            color="white"
-          />
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[5].name"
+              label="Guest Name"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+              required
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-text-field
+              v-model="form.attendee[5].dietary"
+              label="Dietary Restriction"
+              class="mx-md-4 mx-2 sm-mx-0 text-center"
+              autocomplete="new-password"
+              color="white"
+            />
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-select
+              :items="attendingOptions"
+              label="Does this guest accept this invitation?"
+              v-model="form.attendee[5].attending"
+              class="mx-md-4 mx-2 sm-mx-0 text-center flex-grow-0"
+              color="white"
+            />
+          </v-col>
         </v-row>
         <div v-if="peopleAttending >= 1">
           <div class="text-left mx-md-4">Group contact information:</div>
@@ -356,30 +380,6 @@ export default {
       }
 
       if (attendees.length !== 0) {
-        const message = {
-          'Submitted at:': Date.now(),
-          'Number of people attending:': state.peopleAttending,
-          'Attendee Information:': attendees,
-        }
-
-        const now = Date.now()
-        const time = new Date(now).toLocaleString()
-
-        const htmlMessage = `
-        Wedding RSVP from ${state.form.attendee[0].name}
-        Received at: ${time}
-        Number of people attending: ${state.peopleAttending}
-        Willing to be contacted: ${state.form.canContact}
-        Phone number: ${state.form.phone}
-        Email: ${state.form.email}
-        Attendee Name: ${state.form.attendee[0].name} Dietary restriction: ${state.form.attendee[0].dietary}
-        Attendee Name: ${state.form.attendee[1].name} Dietary restriction: ${state.form.attendee[1].dietary}
-        Attendee Name: ${state.form.attendee[2].name} Dietary restriction: ${state.form.attendee[2].dietary}
-        Attendee Name: ${state.form.attendee[3].name} Dietary restriction: ${state.form.attendee[3].dietary}
-        Attendee Name: ${state.form.attendee[4].name} Dietary restriction: ${state.form.attendee[4].dietary}
-        Attendee Name: ${state.form.attendee[5].name} Dietary restriction: ${state.form.attendee[5].dietary}
-        `
-
         const sendEmail = async () => {
           await fetch(FORMSPARK_URL, {
             method: 'POST',
