@@ -43,6 +43,13 @@
             autocomplete="new-password"
             color="white"
           />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[0].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            color="white"
+          />
         </v-row>
         <v-row
           v-if="peopleAttending > 1"
@@ -63,6 +70,13 @@
             label="Dietary Restriction"
             class="mx-md-8 mx-2 sm-mx-0 text-center"
             autocomplete="new-password"
+            color="white"
+          />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[1].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
             color="white"
           />
         </v-row>
@@ -87,6 +101,13 @@
             autocomplete="new-password"
             color="white"
           />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[2].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            color="white"
+          />
         </v-row>
         <v-row
           v-if="peopleAttending > 3"
@@ -107,6 +128,13 @@
             label="Dietary Restriction"
             class="mx-md-8 mx-2 sm-mx-0 text-center"
             autocomplete="new-password"
+            color="white"
+          />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[3].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
             color="white"
           />
         </v-row>
@@ -131,6 +159,13 @@
             autocomplete="new-password"
             color="white"
           />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[4].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
+            color="white"
+          />
         </v-row>
         <v-row
           v-if="peopleAttending > 5"
@@ -151,6 +186,13 @@
             label="Dietary Restriction"
             class="mx-md-8 mx-2 sm-mx-0 text-center"
             autocomplete="new-password"
+            color="white"
+          />
+          <v-select
+            :items="attendingOptions"
+            label="Does this guest accept this invitation?"
+            v-model="form.attendee[5].attending"
+            class="mx-md-8 mx-2 sm-mx-0 text-center flex-grow-0"
             color="white"
           />
         </v-row>
@@ -257,31 +299,38 @@ export default {
       success: false,
       peopleAttending: 0,
       range: [1, 2, 3, 4, 5, 6],
+      attendingOptions: ['Graciously accepts', 'Regretfully declines'],
       form: {
         attendee: [
           {
             name: '',
             dietary: '',
+            attending: '',
           },
           {
             name: '',
             dietary: '',
+            attending: '',
           },
           {
             name: '',
             dietary: '',
+            attending: '',
           },
           {
             name: '',
             dietary: '',
+            attending: '',
           },
           {
             name: '',
             dietary: '',
+            attending: '',
           },
           {
             name: '',
             dietary: '',
+            attending: '',
           },
         ],
         phone: '',
@@ -349,36 +398,42 @@ export default {
                 {
                   Name: state.form.attendee[0].name,
                   'Dietary restriction': state.form.attendee[0].dietary,
+                  'Attending response': state.form.attendee[0].attending,
                 },
               ],
               'Attendee 2': [
                 {
                   Name: state.form.attendee[1].name,
                   'Dietary restriction': state.form.attendee[1].dietary,
+                  'Attending response': state.form.attendee[1].attending,
                 },
               ],
               'Attendee 3': [
                 {
                   Name: state.form.attendee[2].name,
                   'Dietary restriction': state.form.attendee[2].dietary,
+                  'Attending response': state.form.attendee[2].attending,
                 },
               ],
               'Attendee 4': [
                 {
                   Name: state.form.attendee[3].name,
                   'Dietary restriction': state.form.attendee[3].dietary,
+                  'Attending response': state.form.attendee[3].attending,
                 },
               ],
               'Attendee 5': [
                 {
                   Name: state.form.attendee[4].name,
                   'Dietary restriction': state.form.attendee[4].dietary,
+                  'Attending response': state.form.attendee[4].attending,
                 },
               ],
               'Attendee 6': [
                 {
                   Name: state.form.attendee[5].name,
                   'Dietary restriction': state.form.attendee[5].dietary,
+                  'Attending response': state.form.attendee[5].attending,
                 },
               ],
             }),
