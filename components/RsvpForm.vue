@@ -380,6 +380,8 @@ export default {
       }
 
       if (attendees.length !== 0) {
+        const date = new Date()
+        const time = date.getUTCDate()
         const sendEmail = async () => {
           await fetch(FORMSPARK_URL, {
             method: 'POST',
